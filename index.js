@@ -6,13 +6,14 @@ async function main() {
     const users = await fetch("https://jsonplaceholder.typicode.com/users")
     const usersData = await users.json();
     userListEl.innerHTML = usersData.map((user) => userHTML(user)).join('')
+console.log(usersData);
 }
 
 main();
 
 function showUserPosts(id) {
-    window.location.href = `https://hildegard.org/`
-    console.log(id);
+    localStorage.setItem("id", id);
+    window.location.href = `${window.location.origin}/user.html`
 }
 
 function userHTML(user) {
