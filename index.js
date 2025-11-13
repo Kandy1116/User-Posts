@@ -11,6 +11,7 @@ async function main() {
 main();
 
 function showUserPosts(id) {
+    window.location.href = `https://hildegard.org/`
     console.log(id);
 }
 
