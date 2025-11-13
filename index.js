@@ -10,8 +10,8 @@ async function main() {
 
 main();
 
-function showUserPosts(user) {
-    console.log(user);
+function showUserPosts(id) {
+    console.log(id);
 }
 
 function userHTML(user) {
